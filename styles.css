@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap");
+
+/* General Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's width */
+}
+
+body {
+  max-width: 1250px; /* Set the max-width for body to ensure the layout doesn’t exceed 1250px */
+  margin: 0 auto; /* Centers the body */
+  padding: 0 30px;
+  background-color: black;
+}
+
+/* Container Header Styles */
+.cointainerheader {
+  background-image: url(images/hero-background.png);
+  height: 800px;
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Full width of the viewport */
+  max-width: 1250px; /* Ensures the container doesn't exceed 1250px */
+  margin: 0 auto; /* Centers the container */
+  display: block; /* Ensures it's treated as a block element */
+}
+
+/* Navigation Styles */
+.navigation-links ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-right: 500px;
+}
+
+.navigation-links li {
+  padding: 0 10px;
+}
+
+.navigation-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navigation-links li a.home {
+  color: #d5ad82;
+}
+
+.navigation-links div.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+
+img.icon {
+  margin-right: 120px;
+}
+
+span.hero-section div.text h5.title1 {
+  color: #c29f77;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+span.hero-section div.text h1.title2 {
+  color: white;
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 4.3rem;
+  font-weight: 500;
+}
+
+span.hero-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  gap: 50px;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.hero-section2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  gap: 50px;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.hero-section2 button.main {
+  height: 60px;
+  width: 180px;
+  border-radius: 5%;
+  background-color: #933c24;
+  color: white;
+  border: black solid 1px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.hero-section2 span.learn {
+  color: #cda87d;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+/* Main Section Styles */
+.main-section {
+  height: auto; /* Adjust height to fit content dynamically */
+  width: 100%; /* Full width of the viewport */
+  max-width: 1250px; /* Ensures the container doesn't exceed 1250px */
+  background-color: white;
+  margin: 0 auto; /* Centers the container */
+  padding: 20px; /* Add some padding inside */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.main-section h1.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  padding-top: 50px; /* Adjusted padding */
+  padding-bottom: 50px; /* Adjusted padding */
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 4.3rem;
+  font-weight: 500;
+}
+
+/* Menu Cards Layout */
+.menu-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.card {
+  border: 1px solid #ddd; /* Example border */
+  padding: 10px;
+  text-align: center;
+  background-image: url(images/top-products-background.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card div.content span.price {
+  display: flex;
+  color: white;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.card div.content div.description-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30%;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.card div.content span.bread {
+  display: flex;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.card div.content span.description {
+  color: white;
+}
+
+.card div.content button.button {
+  color: white;
+  background-color: #933c24;
+  width: 80px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 12%;
+}
+
+.card div.content button.button:hover {
+  background-color: green;
+}
+
+.main-section2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 1250px;
+  height: 400px;
+  background-image: url(images/about-us-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Ensure the parent container (.title) is a flex container */
+.main-section2 div.title {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Horizontally center the child elements */
+  justify-content: center; /* Vertically center the child elements */
+  height: 100%; /* Ensure the container takes up the full height of its parent */
+  text-align: center; /* This ensures text inside p and h1 is centered */
+  padding: 0 20px; /* Optional, to add some space on the sides */
+}
+
+/* Styling for the About Us title */
+.main-section2 div.title h1.about-us {
+  padding-top: 30px;
+  color: white;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px; /* Optional, space between title and paragraph */
+}
+
+/* Styling for the content paragraph */
+.main-section2 div.title p.content-aboutus {
+  font-size: 1rem;
+  width: 300px;
+  color: #999899;
+  margin-bottom: 20px; /* Optional, space between paragraph and button */
+}
+
+/* Styling for the button */
+.main-section2 div.title button.readmore {
+  background-color: #933c24;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.main-section3 div.title h1.featured-treats {
+  display: flex;
+  align-items: center; /* Horizontally center the child elements */
+  justify-content: center; /* Vertically center the child elements */
+  height: 100%; /* Ensure the container takes up the full height of its parent */
+  font-family: "Sansita Swashed", system-ui;
+  font-size: 4.3rem;
+  font-weight: 500;
+  padding-bottom: 80px;
+}
+
+.main-section3 div.main-section3-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 20px; /* Space between the grid items */
+  justify-items: center; /* Horizontally centers the grid items */
+  align-items: center; /* Vertically centers the grid items */
+}
+
+.main-section3 div.main-section3-content span.description-pastry {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 40px;
+  padding-right: 100px;
+}
+.main-section3 div.main-section3-content span.price-pastry,
+i.fa-solid fa-dollar-sign {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-section {
+  background-image: url(images/footer-background.png);
+  height: 600px;
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Full width of the viewport */
+  max-width: 1250px; /* Ensures the container doesn't exceed 1250px */
+  margin: 0 auto; /* Centers the container */
+  display: block; /* Ensures it's treated as a block element */
+}
+
+.footer-section .links {
+  display: flex;  /* Use Flexbox */
+  justify-content: space-between;  /* This makes space between items */
+  align-items: center;  /* Vertically center the items */
+  justify-content: center;
+  padding: 20px;  /* Optional: add padding around the footer */
+  flex-grow: 2;
+}
+
+.footer-section ul.logo-icon {
+  display: flex;  /* Use Flexbox for the list */
+  align-items: center;  /* Vertically center the items */
+  justify-content: center;
+  gap: 15px;  /* Optional: space between the items */
+  padding-top: 20px;
+  padding-right: 100px;
+  margin: 0;  /* Removes default margin */
+  flex-grow: 4;
+}
+
+.footer-section ul.logo-icon li {
+  list-style: none;  
+  
+  
+}
+
+.footer-section img.footer-logo {
+  max-width: 100%;  /* Ensure logo image doesn't overflow */
+  height: auto;  /* Maintain aspect ratio */
+  padding-right: 450px;
+  
+  
+}
+
+.footer-section ul.logo-icon i {
+  font-size: 40px;  /* Icon size */
+  color: #d5ad82;  /* Icon color */
+  gap: 10px;
+}
+
+.footer-section li.follow-us{
+  font-size: 20px;
+  color: #d5ad82;  
+  padding-right: 30px;
+}
+
+.containerflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  
+}
+
+.first-flex{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+
+.second-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.third-flex .card1{
+  display: flex;
+  
+  
+}
+
+
+
+.first-flex h1.about-us,.second-flex h1.explore,.third-flex h1.recent-news{
+  color: #d5ad82; 
+}
+
+.first-flex, .second-flex, .third-flex{
+  color: white;
+  font-weight: 500;
+}
+
+.third-flex h5{
+  color: #d5ad82;
+}
+
+.puff-design1, .puff-design2{
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+
+.copyright{
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ padding-top: 150px;
+ color: #696969;
+ 
+}
+
+/* Responsive Media Queries */
+
+/* Tablet and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .navigation-links ul {
+    padding-right: 0;
+    flex-direction: column;
+  }
+
+  .hero-section {
+    margin-left: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .hero-section2 {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .menu-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-section {
+    padding: 10px;
+  }
+
+  .footer-section .links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .containerflex {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* Mobile and below (max-width: 480px) */
+@media (max-width: 480px) {
+  .menu-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section div.text h1.title2 {
+    font-size: 2rem;
+  }
+
+  .hero-section div.text h5.title1 {
+    font-size: 1rem;
+  }
+
+  .hero-section2 button.main {
+    width: 100%;
+  }
+
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-section .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
